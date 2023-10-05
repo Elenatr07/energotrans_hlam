@@ -148,3 +148,7 @@ text-align: center;
 .modal-dialog-scrollable {
  height: 100%;
 }
+
+.modal {
+    height: auto;
+}
