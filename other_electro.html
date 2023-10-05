@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Запчасти для ремонта трансформаторов</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> 
+	<link rel="stylesheet" type="text/css" href="themes/theme1.css" />
+	<link rel="stylesheet" type="text/css" href="themes/wicart.css" />
+	<link rel="stylesheet" href="themes/style_menu.css">
+    <link rel="stylesheet" href="themes/style_general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Josefin+Sans:wght@300&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;1,500&family=Lemonada:wght@400;500;600;700&family=Manrope:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=swap" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" ></script>
+	<!-- WI-JQ-HEADER -->
+	<script src="scrypts/wicart.js"  type="text/javascript" ></script>
+	<script src="scrypts/wicart.optional.js"  type="text/javascript"></script>
+	<script src="scrypts/wicart.num.js"  type="text/javascript"></script>
+	<script src="scrypts/priceList.js"></script>
+	<!-- WI-HEADER -->
+
+</head>
+<body>
+	<div id="nav_shadow"></div>
+    <div class="main_container">
+        <div class="header_block">
+           <header class="header_page">
+            <a href="index.html" class="header_logo">
+             <img src="img/logo.svg" alt="" class="logo" id="logo">
+      
+			</a>
+      
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu" id="menu_opener"><span class="hamb-line"></span></label>
+            <!-- Menu -->
+            <nav class="nav">
+              <ul class="menu">
+                <li ><a href="index.html" class="link menu_link">На главную страницу</a></li>
+                <li ><a href="products.html" class="link">Все товары</a> </li>
+                <li ><a href="spare_parts.html" class="link">Запчасти для трансформаторов</a> </li>
+                <li ><a href="decorations.html" class="link">Материалы для ВЛ</a> </li>
+                <li ><a href="promotions.html" class="link">Прочее электрооборудование</a> </li>
+                <li ><a href="contacts.html" class="link e-mail">energotr07@yandex.ru</a> </li>
+                </ul>
+          
+            </nav>
+        
+           
+          </header> 
+        </div>
+		<div class="line"></div>
+		<div class="items_page">
+		
+			<div class="Items_page_cart_block">
+				<div class="cart">
+					<div class="price"><a class="cart_icon" href="#" id="basketwidjet" onclick="cart.showWinow('bcontainer', 1)"></a></div>
+
+					<div style="text-align: center"><a href="#!" onclick="cart.clearBasket()">Очистить корзину</a></div>
+				</div>
+			</div>
+			<h1 class="items_page_header">Прочее электрооборудование</h1>
+			<!-- WI-BASKET -->
+			<!--Filter-->
+			<div class="filter_cake">
+                <div class="filter filter_option">
+                    <div class="type all active" data-filter="all">Все электрооборудование</div>
+                    <div class="type for_rza" data-filter="for_rza">Материалы и приборы для релейной защиты </div>
+                    <div class="type va" data-filter="va">Выключатели автоматические</div>
+                    <div class="type cakes_without_mastic" data-filter="cakes_without_mastic">Предохранители</div>
+					<div class="type cakes_without_mastic" data-filter="cakes_without_mastic">Изоляторы</div>
+					<div class="type cakes_without_mastic" data-filter="cakes_without_mastic">Коммутационные аппараты</div>
+					<div class="type other" data-filter="other">Прочее</div>
+                   
+                </div>
+
+            </div>
+			<!--Filter end----->
+
+			<div class="items_page_block_cart">
+				<!--cart1-->
+				<div class="v all for_rza">
+					<h2>Принтер этикеток Brady</h2>
+					<div><img class="im" src="img/brady.png" /></div>
+		    		<button type="button" class="btn_items_page" data-toggle="modal" data-target="#modal1">Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R001">0</span> рублей</p>
+				</div>
+		
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R001" value="1" data-min-value="1" data-max-value="1" /></div>
+				
+				<button id="wicartbutton_R001" class="button_addToCart" onclick="cart.addToCart(this, 'R001', priceList['R001'])">Купить</button>
+			</div>
+			<!--cart2-->
+			<div class="v all for_rza">
+				<h2>Картридж для принтера Brady BMP-21-Plus</h2>
+				<div><img class="im" src="img/for_brady.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#modal2">Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R002">0</span> рублей</p>
+				</div>
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R002" value="1" data-min-value="1" data-max-value="8" /></div>
+				<button id="wicartbutton_R002" class="button_addToCart" onclick="cart.addToCart(this, 'R002', priceList['R002'])">Купить</button>
+			</div>
+			
+			<!--cart3-->
+			<div class="v all for_rza">
+				<h2>Кулачковый переключатель КПУ11-10/202 (2р (возврат))</h2>
+				<div><img class="im" src="img/kpu11.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#modal3">Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R003">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R003" value="1" data-min-value="1" data-max-value="2" /></div>
+				<button id="wicartbutton_R003" class="button_addToCart" onclick="cart.addToCart(this, 'R003', priceList['R003'])">Купить</button>
+			</div>
+			<!--cart4-->
+			<div class="v all for_rza">
+				<h2>Кулачковый переключатель 4G10-51U</h2>
+				<div><img class="im" src="img/4g10-51.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#modal4">Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R004">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R004" value="1" data-min-value="1" data-max-value="2" /></div>
+				<button id="wicartbutton_R004" class="button_addToCart" onclick="cart.addToCart(this, 'R004', priceList['R004'])">Купить</button>
+			</div>
+			<!--cart5-->
+			<div class="v all for_rza va">
+				<h2>Выключатель автоматический 2п ВА47-63 С16 4,5кА</h2>
+				<div><img class="im" src="img/va4763C16-2p.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#" disabled>Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R005">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R005" value="1" data-min-value="1" data-max-value="2" /></div>
+				<button id="wicartbutton_R005" class="button_addToCart" onclick="cart.addToCart(this, 'R005', priceList['R005'])">Купить</button>
+			</div>
+			<!--cart6-->
+			<div class="v all for_rza va">
+				<h2>Выключатель автоматический 2п ВА47-63 С10 4,5кА</h2>
+				<div><img class="im" src="img/va4763C10-2p.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#" disabled>Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R006">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R006" value="1" data-min-value="1" data-max-value="2" /></div>
+				<button id="wicartbutton_R006" class="button_addToCart" onclick="cart.addToCart(this, 'R006', priceList['R006'])">Купить</button>
+			</div>
+			<!--cart7-->
+			<div class="v all for_rza va">
+				<h2>Контакт состояния КСВ47 на DIN-рейку TDM</h2>
+				<div><img class="im" src="img/ksv-47.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#" disabled>Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R007">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R007" value="1" data-min-value="1" data-max-value="4" /></div>
+				<button id="wicartbutton_R007" class="button_addToCart" onclick="cart.addToCart(this, 'R007', priceList['R007'])">Купить</button>
+			</div>
+			<!--Cart8-->
+			<div class="v all for_rza va">
+				<h2>Выключатель автоматический 1п ВА47-63 С4 4,5кА</h2>
+				<div><img class="im" src="img/va4763C4-1p.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#" disabled>Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R008">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R008" value="1" data-min-value="1" data-max-value="4" /></div>
+				<button id="wicartbutton_R008" class="button_addToCart" onclick="cart.addToCart(this, 'R008', priceList['R008'])">Купить</button>
+			</div>
+			<!--Cart9-->
+			<div class="v all for_rza va">
+				<h2>Ограничитель импульсных напряжений ОИН-1</h2>
+				<div><img class="im" src="img/oin1.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#" disabled>Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R009">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R009" value="1" data-min-value="1" data-max-value="2" /></div>
+				<button id="wicartbutton_R009" class="button_addToCart" onclick="cart.addToCart(this, 'R009', priceList['R009'])">Купить</button>
+			</div>
+			<!--Cart10-->
+			<div class="v all other">
+				<h2>Термостат ClimaSys NSYCCOTHCER20 -20...+60</h2>
+				<div><img class="im" src="img/termostat.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#" disabled>Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R0010">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R0010" value="1" data-min-value="1" data-max-value="1" /></div>
+				<button id="wicartbutton_R0010" class="button_addToCart" onclick="cart.addToCart(this, 'R0010', priceList['R0010'])">Купить</button>
+			</div>
+			<!--Cart11-->
+			<div class="v all for_rza">
+				<h2>Реле РЭУ11-11-2-40 пост.220В</h2>
+				<div><img class="im" src="img/reu11.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#" disabled>Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R0011">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R0011" value="1" data-min-value="1" data-max-value="2" /></div>
+				<button id="wicartbutton_R0011" class="button_addToCart" onclick="cart.addToCart(this, 'R0011', priceList['R0011'])">Купить</button>
+			</div>
+			<!--Cart12-->
+			<div class="v all for_rza">
+				<h2>Реле РЭУ11-11-2-40 пост.0,1А</h2>
+				<div><img class="im" src="img/reu11.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#" disabled>Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R0012">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R0012" value="1" data-min-value="1" data-max-value="4" /></div>
+				<button id="wicartbutton_R0012" class="button_addToCart" onclick="cart.addToCart(this, 'R0012', priceList['R0012'])">Купить</button>
+			</div>
+			<!--Cart13-->
+			<div class="v all for_rza">
+				<h2>Реле РЭУ11-11-2-40 пост.0,05А</h2>
+				<div><img class="im" src="img/reu11.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#" disabled>Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R0013">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R0013" value="1" data-min-value="1" data-max-value="1" /></div>
+				<button id="wicartbutton_R0013" class="button_addToCart" onclick="cart.addToCart(this, 'R0013', priceList['R0013'])">Купить</button>
+			</div>
+			<!--Cart14-->
+			<div class="v all for_rza">
+				<h2>Реле РЭУ11-11-2-40 перем.220В</h2>
+				<div><img class="im" src="img/reu11.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#" disabled>Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R0014">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R0014" value="1" data-min-value="1" data-max-value="4" /></div>
+				<button id="wicartbutton_R0014" class="button_addToCart" onclick="cart.addToCart(this, 'R0014', priceList['R0014'])">Купить</button>
+			</div>
+			<!--Cart15-->
+			<div class="v all for_rza">
+				<h2>Прибор многофункциональный ЩМ-120</h2>
+				<div><img class="im" src="img/schm120.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#modal5" >Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R0015">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R0015" value="1" data-min-value="1" data-max-value="1" /></div>
+				<button id="wicartbutton_R0015" class="button_addToCart" onclick="cart.addToCart(this, 'R0015', priceList['R0015'])">Купить</button>
+			</div>
+			<!--Cart16-->
+			<div class="v all for_rza">
+				<h2>Клемма проходная Phoenix Contact UT-4 TWIN</h2>
+				<div><img class="im" src="img/UT-4TWIN.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#modal6" >Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R0016">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R0016" value="1" data-min-value="1" data-max-value="14" /></div>
+				<button id="wicartbutton_R0016" class="button_addToCart" onclick="cart.addToCart(this, 'R0016', priceList['R0016'])">Купить</button>
+			</div>
+			<!--Cart17-->
+			<div class="v all for_rza">
+				<h2>Клемма проходная Phoenix Contact UT-4 MT</h2>
+				<div><img class="im" src="img/UT-4MT.png" /></div>
+				<button type="button" class="btn_items_page" data-toggle="modal" data-target="#modal7" >Еще фото </button>
+				<div>
+					<p>Цена: <span class="wicartprice" id="wicartprice_R0017">0</span> рублей</p>
+				</div>
+
+				<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_R0017" value="1" data-min-value="1" data-max-value="2" /></div>
+				<button id="wicartbutton_R0017" class="button_addToCart" onclick="cart.addToCart(this, 'R0017', priceList['R0017'])">Купить</button>
+			</div>
+
+		</div>
+			
+	</div>
+	
+
+<footer>
+	<div class="footer_block_wrapper">
+		<div class="footer_logo">
+			<img src="img/logo.svg" alt="" class="logo" id="logo">
+		</div>
+		<div class="footer_menu">
+			 <ul> Сайт
+			<li><a href="">На главную страницу</a></li>
+			<li><a href="">Все товары</a></li>
+			<li><a href="">Запчасти для трансформаторов</a></li>
+			<li><a href="">Материалы для ВЛ</a></li>
+			<li><a href="">Прочее электрооборудование</a></li>
+		</ul>
+		</div>
+		<div class="footer_contacts">
+			<ul>Контакты
+				<li>Тел: +7 (909) 804 27 30</li>
+				<li>E-mail: <span>energotr07@yandex.ru </span> </li>
+
+			</ul>
+		</div>
+		<div class="footer_address">Адрес
+			<p>Трехгорная 8, Хабаровск <br>
+			Россия, 680054</p>
+		</div>
+	   
+		
+	
+	</div>
+	<div class="copyright">© 2023 Электротехническая компания «Энерготранс». Все права защищены.</div>
+	<a href="https://spectrumwise.tech" class="creator" target="_blank">Сайт создан SpectrumWise</a>
+</footer>
+</div>
+
+<!---Форма для магазина-------------------------------->
+<div id="order" class="popup">
+<a href="#" onclick="cart.closeWindow('order', 0)" style="float:right">[закрыть]</a>
+<h4>Введите ваши контактные данные</h4>
+
+<form id="formToSend">
+<input id="fio" type="text" placeholder="Ваши фамилия и имя"  class="" />
+<input id="city" type="text" placeholder="Город"  class="text-input"/>
+<input id="phone" type="text" placeholder="Контактный телефон" class="text-input"/>
+<input id="email" type="text" placeholder="Электронная почта" class="" />
+<br>
+<textarea id="question" placeholder="Адрес"></textarea>
+<br>
+<b>Доставка:</b>
+<br>
+<select id="delivery">
+<option value="-">-</option>
+<option value="Почта РФ">Почта РФ</option>
+<option value="EMS">EMS</option>
+<option value="DHL">DHL</option>
+<option value="TNT">TNT</option>
+</select>
+<br>
+<input type="checkbox" value="V"> Предоплата
+</form>
+<button onclick="cart.sendOrder('formToSend,overflw,bsum');" href="#">Отправить заказ</button>
+</div>
+<!----------------------------------------------------->
+
+<!------------------MODAL---------------------------------------->
+<!-------Modal1----------------->
+<div class="modal" id="modal1">
+	<div class="modal-dialog modal-dialog-scrollable">
+		<div class="modal-content">
+
+			<!-- Modal header -->
+	
+
+			<!-- Modal body -->
+			<div class="modal-body">
+
+				<div class="items_page_img">
+					
+					   <div class="zoomer" onmousemove="zoom(event)"
+					   style="background-image: url(img/brady.png);" >
+						  <img src="img/brady.png" />
+					  </div>
+					  <div class="zoomer" onmousemove="zoom(event)"
+					  style="background-image: url(img/brady1.png);" >
+						 <img src="img/brady1.png" />
+					</div>
+				
+			</div>
+		
+
+			</div>
+
+			<!-- Modal footer -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!-----Modal2------------------->
+<div class="modal" id="modal2">
+	<div class="modal-dialog modal-dialog-scrollable">
+		<div class="modal-content">
+
+			<!-- Modal header -->
+	
+
+			<!-- Modal body -->
+			<div class="modal-body">
+
+				<div class="items_page_img">
+					<div class="zoomer" onmousemove="zoom(event)"
+					style="background-image: url(img/for_brady1.png);" >
+					   <img src="img/for_brady1.png" />
+				   </div>
+				   <div class="zoomer" onmousemove="zoom(event)"
+				   style="background-image: url(img/for_brady2.png);" >
+					  <img src="img/for_brady2.png" />
+				  </div>
+			
+				 
+
+				</div>
+		
+
+			</div>
+
+			<!-- Modal footer -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-----Modal3------------------->
+<div class="modal" id="modal3">
+	<div class="modal-dialog modal-dialog-scrollable">
+		<div class="modal-content">
+
+			<!-- Modal header -->
+	
+
+			<!-- Modal body -->
+			<div class="modal-body">
+
+				<div class="items_page_img">
+					<div class="zoomer" onmousemove="zoom(event)"
+					style="background-image: url(img/kpu11-1.png);" >
+					   <img src="img/kpu11-1.png" />
+				   </div>
+				   <div class="zoomer" onmousemove="zoom(event)"
+				   style="background-image: url(img/kpu11-2.png);" >
+					  <img src="img/kpu11-2.png" />
+				  </div>
+			
+				 
+
+				</div>
+		
+
+			</div>
+
+			<!-- Modal footer -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-----Modal4------------------->
+<div class="modal" id="modal4">
+	<div class="modal-dialog modal-dialog-scrollable">
+		<div class="modal-content">
+
+			<!-- Modal header -->
+	
+
+			<!-- Modal body -->
+			<div class="modal-body">
+
+				<div class="items_page_img">
+					<div class="zoomer" onmousemove="zoom(event)"
+					style="background-image: url(img/4g10-51-1.png);" >
+					   <img src="img/4g10-51-1.png" />
+				   </div>
+				   <div class="zoomer" onmousemove="zoom(event)"
+				   style="background-image: url(img/4g10-51-2.png);" >
+					  <img src="img/4g10-51-2.png" />
+				  </div>
+			
+				 
+
+				</div>
+		
+
+			</div>
+
+			<!-- Modal footer -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-----Modal5------------------->
+<div class="modal" id="modal5">
+	<div class="modal-dialog modal-dialog-scrollable">
+		<div class="modal-content">
+
+			<!-- Modal header -->
+	
+
+			<!-- Modal body -->
+			<div class="modal-body">
+
+				<div class="items_page_img">
+					<div class="zoomer" onmousemove="zoom(event)"
+					style="background-image: url(img/schm120-1.png);" >
+					   <img src="img/schm120-1.png" />
+				   </div>
+				   <div class="zoomer" onmousemove="zoom(event)"
+				   style="background-image: url(img/schm120-2.png);" >
+					  <img src="img/schm120-2.png" />
+				  </div>
+				  <div class="zoomer" onmousemove="zoom(event)"
+				  style="background-image: url(img/schm120-3.png);" >
+					 <img src="img/schm120-3.png" />
+				 </div>
+			
+				 
+
+				</div>
+		
+
+			</div>
+
+			<!-- Modal footer -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-----Modal6------------------->
+<div class="modal" id="modal6">
+	<div class="modal-dialog modal-dialog-scrollable">
+		<div class="modal-content">
+
+			<!-- Modal header -->
+	
+
+			<!-- Modal body -->
+			<div class="modal-body">
+
+				<div class="items_page_img">
+					<div class="zoomer" onmousemove="zoom(event)"
+					style="background-image: url(img/UT-4TWIN-1.png);" >
+					   <img src="img/UT-4TWIN-1.png" />
+				   </div>
+				   <div class="zoomer" onmousemove="zoom(event)"
+				   style="background-image: url(img/UT-4TWIN-2.png);" >
+					  <img src="img/UT-4TWIN-2.png" />
+				  </div>
+				
+			
+				 
+
+				</div>
+		
+
+			</div>
+
+			<!-- Modal footer -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-----Modal7------------------->
+<div class="modal" id="modal7">
+	<div class="modal-dialog modal-dialog-scrollable">
+		<div class="modal-content">
+
+			<!-- Modal header -->
+	
+
+			<!-- Modal body -->
+			<div class="modal-body">
+
+				<div class="items_page_img">
+					<div class="zoomer" onmousemove="zoom(event)"
+					style="background-image: url(img/UT-4MT-1.png);" >
+					   <img src="img/UT-4MT-1.png" />
+				   </div>
+				</div>
+		
+
+			</div>
+
+			<!-- Modal footer -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script>
+var cart;
+var config;
+var wiNumInputPrefID;
+/* WI-GLOBAL-VARS */
+$(document).ready(function(){  
+    cart = new WICard("cart");
+    config = {'clearAfterSend':true, 'showAfterAdd':true};
+    
+    cart.init("basketwidjet", config);
+    WICartNum('cart', 'wicartnum', 'winum_');
+    WICartOptional('cart', 'wicartoptional', 'winum_');
+    WICartOptionalSelect('cart', 'wicartoptional', 'winum_');
+    /* WI-MODULES */
+    
+    
+});	
+document.addEventListener('visibilitychange', function(e) {
+cart.init("basketwidjet", config);
+}, false);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scrypts/style_menu.js" ></script>
+<script src="scrypts/zoom.js"></script>
+<script src="scrypts/filter_scrypt.js"></script>
+
+</body>
+</html>
