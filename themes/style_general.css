@@ -62,7 +62,7 @@ a {
     font-weight: 600;
     line-height: 150%; /* 96px */
     margin-top: 364px;
-    width: 1000px;
+    width: 1030px;
  
 }
 section {
@@ -103,7 +103,7 @@ section {
     width: 262px;
     height: 60px;
     flex-shrink: 0;
-    padding: 17px 30px;
+    padding: 17px 25px;
     display: block;
     line-height: 19px;
   
@@ -151,6 +151,7 @@ section {
     flex-shrink: 0;
     padding: 50px 50px;
     box-shadow: 0px 4px 25px 0px rgba(11, 35, 59, 0.5);
+    margin: 0 35px;
 
     }
 .central_block_item p {
@@ -164,7 +165,7 @@ section {
 }
 .central_block_items {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 100px;
     margin-bottom: 80px;
 }
@@ -260,7 +261,7 @@ section {
     color: #E9D758;
  }
 .footer_menu ul li, .footer_contacts ul li {
-    margin-top: 26px;
+    margin-top: 12px;
 }
 .footer_contacts ul li:last-child span {
     color: #E9D758;
