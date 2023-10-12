@@ -49,25 +49,20 @@
             <div class="products_block_items">
             <a href="spare_parts.html" class="products_block_item">
                
-                    <img src="img/Rectangle.png" alt="">
+                    <img src="img/transformator.png" alt="">
                     <h2>Запчасти для ремонта трансформаторов</h2>
                
            </a>
-            <a href="" class="products_block_item">
-                
-                    <img src="img/Rectangle.png" alt="">
-                    <h2>Материалы для ВЛ</h2>
+      
+            <a href="pribor.html" class="products_block_item">
+               
+                    <img src="img/pribory.png" alt="">
+                    <h2>Измерительные приборы</h2>
                
             </a>
-            <a href="" class="products_block_item">
-               
-                    <img src="img/Rectangle.png" alt="">
-                    <h2>Коммутационные аппараты</h2>
-               
-            </a>
-            <a href="" class="products_block_item">
+            <a href="other_electro.html" class="products_block_item">
                  
-                    <img src="img/Rectangle.png" alt="">
+                    <img src="img/electro.png" alt="">
                     <h2>Прочее электрооборудование</h2>
                 
             </a>
@@ -109,6 +104,29 @@
             <div class="copyright">© 2023 Электротехническая компания «Энерготранс». Все права защищены.</div>
             <a href="https://spectrumwise.tech" class="creator" target="_blank">Сайт создан SpectrumWise</a>
         </footer>
+<!---Форма для магазина-------------------------------->
+<div id="order" class="popup">
+	<a href="#" onclick="cart.closeWindow('order', 0)" style="float:right"><img class="pop_close" src="img/close.svg" alt=""></a>
+	<h4 class="popup_header">Введите Ваши данные для заказа</h4>
+	
+	<form id="formToSend">
+	<input id="fio" type="text" placeholder="Ваши фамилия и имя"  class="" />
+	<input id="name" type="text" placeholder="Название организации"  class="" />
+	<input id="inn" type="text" placeholder="ИНН организации"  class="" />
+	<input id="city" type="text" placeholder="Город"  class="text-input"/>
+	<input id="phone" type="text" placeholder="Контактный телефон" class="text-input"/>
+	<input id="email" type="text" placeholder="Электронная почта" class="" />
+	<br>
+	<textarea id="question" placeholder="Адрес доставки" class=""></textarea>
+	<textarea id="delivery" type="text" placeholder="Способ доставки (указажите транпортную компанию или самовывоз)"></textarea>
+	<br>
+	
+	
+	
+	</form>
+	<button class="button_send_order" onclick="cart.sendOrder('formToSend,overflw,bsum');" href="#">Отправить заказ</button>
+	</div>
+	<!----------------------------------------------------->
 
         <script src="scrypts/style_menu.js"></script>
 </body>

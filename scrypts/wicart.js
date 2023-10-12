@@ -11,7 +11,7 @@ var local = 	{
 			"price" : "Цена",
 			"all" : "Всего",
 			"order" : "Оформить заказ",
-			"basket" : "корзина",
+			"basket" : "Корзина",
 			"num" : "кол-во",
 			"send" : "Спасибо за заказ!\nМы свяжемся с Вами в ближайшее время",
 			"goods" : "Товаров",
@@ -29,7 +29,7 @@ function WICard(obj, plugins)
 	this.IDS = [];
 	this.objNAME = obj;
 	this.CONFIG = {};
-	this.IMG = "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABpFBMVEUAAABEREBEREBEREBEREASEhEJCQgGBgYBAQEAAAAGBgUHBwYAAAAAAAADAwNEREBEREAJCQkICAcGBgYFBQUJCQgnJyVEREAICAgBAQEAAAAICAcAAAAAAAAAAAAJCQgAAAAGBgYBAQEQEA8NDQwHBwcBAQEMDAsSEhEJCQkBAQEBAQEBAQFAQDxEREBEREADAwIAAAABAQESEhEkJCIAAAAICAgAAAAQEA9EREAAAAATExIAAAAKCgkNDQwAAAAAAAABAQETExIHBwcDAwMDAwMTExIAAAAAAAABAQEAAAAAAAAAAAAAAAAAAAAAAAADAwIAAAAGBgUBAQEWFhUAAAAAAAAHBwYBAQEVFRMDAwMHBwcUFBMWFhUBAQETExIAAAAAAAADAwMMDAsAAAAAAAASEhEAAAAUFBMAAAAJCQkrKygDAwMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAwMAAAAJCQgAAAAiIiABAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQFEREAFBQUBAQEAAAAGBgYICAgHBwcBAQEJW8x2AAAAhXRSTlMAAQcIAjJ0kZqZnp+LaygNDxKw/v6wIwPY1A+upf4nenGWvXCg/Pubc8eSmLkcHxpW+vlhBr6hl3EDUl9pop5Q+fhe+1FPXVT8mlxfXWD9+1dbnPRRRved9ldI+Fhd+mBaVlSYWJN1V2dqwwVTA8ORvJXAknRzKii2rCjc3BUTqagrepgUbRZwswAAAAlwSFlzAAAASAAAAEgARslrPgAAAb1JREFUOMuNk2dTwkAQhpdiCZagotiwd5RYQeyKJdii2FDsvffeG0TJnza3lzg4kBnv0zt5NpvdZ3IA/zs6vUGv00wAxrj4hESGnERTkomk5JRU1swaFZ6WnhEMieSEgl9qsmRmWVWe/R2W8KkUjkw5uUr/vNhcEvPpLHEZGly0FYA8pb4wqMFFscioBzAU06lKSsvKKa+orKqmqYY1yB3smGvrHFx9A0mNTQ6uuQU7Oc1yB50Lc6uDc0ObXNHYTlIHfqmTJaZcmLvkpwDdPb19hAODkzjRlAuzpx93GhhEPsTjpF6gBTg1PyxnN4d8hHKJoQUhuhU/qvKxcWVTWmAPKlsLE5RP8qoJLND5vhQ/U9PIYWZWNcWgyTnFpH+ecoCFgNKTQZM+atK/qHI3txSg73gjTC6vIF9dw0nXhSiTG8g3eaEeJ92KMrlN+I4gSp5dkvaiTO4fAKwJ6PQQ4Og4wuQJ3fp070zZXzhJOafpAgsuQ2Gtf+4KC64tWtx2gybZW61/8g7QpPn+ITZ/fAI0yVqfX2wx+r8+gxVNkl3f3j+cnU4v3j4vSa73NwDrJ5qkt+f3Jv5N6u3Vvt0/UGcpYbC85ecAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTMtMDUtMThUMDY6MDM6MzEtMDU6MDALk1CfAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDEzLTA1LTE4VDA2OjAzOjMxLTA1OjAwes7oIwAAAABJRU5ErkJggg==";
+	this.IMG = "../img/close.svg";
 	
 	
 	this.init = function(widjetID, config)
@@ -182,7 +182,7 @@ function WICard(obj, plugins)
 			$("body").append(" \
 				<div id='blindLayer' class='blindLayer'></div> \
 				<div id='bcontainer' class='bcontainer'> \
-				<div id='bsubject'>" + local.basket + "<a id='bclose' href='#' onclick='" + this.objNAME + ".closeWindow(\"bcontainer\", 1);'><img src='data:image/jpeg;base64,"+ this.IMG + "' /></a></div> \
+				<div id='bsubject'>" + local.basket + "<a id='bclose' href='#' onclick='" + this.objNAME + ".closeWindow(\"bcontainer\", 1);'><img class='img_close' src="+ this.IMG + " /></a></div> \
 				<table id='bcaption'><tr><td>ID</td><td>" + local.name + "</td><td>" + local.price + "</td><td>" + local.num + "</td><td>" + local.all + "</td><td></td></tr></table> \
 				<div id='overflw'><table class='btable' id='btable'></table></div> \
 				<div id='bfooter'> <button class='bbutton' onclick=\"cart.showWinow('order', 1)\">" + local.order + "</button><span id='bsum'>...</span></div> \
@@ -210,7 +210,7 @@ function WICard(obj, plugins)
 													<span class="basket_num" id="basket_num_' + id + '">'+ num +'</span> \
 													<div class="basket_num_buttons" id="plus_' + id + '">+</div></td> \
 													<td id="linesum_' + id + '">'+ parseFloat(price * num) +' руб.</td> \
-													<td><a href="#" onclick="' + this.objNAME + '.delItem(\'' + id + '\')"><img src="data:image/jpeg;base64,'+ this.IMG + '" /></a></td> \
+													<td><a href="#" onclick="' + this.objNAME + '.delItem(\'' + id + '\')"><img class="img_close_yellow" src="'+ this.IMG + '" /></a></td> \
 													</tr>';	
 				}
 			$("#btable").append(productLine);
@@ -259,7 +259,7 @@ function WICard(obj, plugins)
 		{
 		var sum = 0;
 		for(var idkey in this.DATA) { sum += parseFloat(this.DATA[idkey].price * this.DATA[idkey].num); }
-		$("#bsum").html(sum + " руб.");	
+		$("#bsum").html("Сумма заказа: " + sum + " руб.");	
 		}	
 	this.center = function(obj)
 		{
