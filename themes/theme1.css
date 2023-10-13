@@ -190,3 +190,8 @@ text-align: center;
     width: 95%;
     margin: 25px auto;
 }
+@media(max-width:1000px) {
+    .Items_page_cart_block {
+        margin-right: 50px;
+    }
+}

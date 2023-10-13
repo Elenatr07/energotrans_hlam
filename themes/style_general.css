@@ -62,7 +62,7 @@ a {
     font-weight: 600;
     line-height: 150%; /* 96px */
     margin-top: 155px;
-    width: 1030px;
+    max-width: 1030px;
  
 }
 section {
@@ -106,6 +106,7 @@ section {
     padding: 17px 25px;
     display: block;
     line-height: 19px;
+    text-align: center;
   
 }
 .products_button:hover {
@@ -205,6 +206,8 @@ section {
     line-height: 150%; /* 36px */
     text-align: center;
     margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
  }
  .contacts_block_phone, .contacts_block_email {
     display: flex;
@@ -309,7 +312,7 @@ section {
 }
 .products_block_wrapper {
     background-color: #FFF;
-    padding-top: 114px;
+
     padding-bottom: 114px;
     
     
@@ -351,3 +354,288 @@ section {
     line-height: 150%; /* 96px */
    
 }
+@media(max-width:1800px) {
+    .main_block_wrapper img {
+        width: 40%;
+    }
+    .central_block_item {
+        width: 28%;
+    }
+}
+@media(max-width:1600px) {
+    .main_header,
+    .contacts_block_header,
+    .central_block_header {
+        font-size: 60px;
+    }
+    .central_block_item_header h3 {
+        font-size: 43px;
+    }
+    .central_block_item p,
+    .footer_menu ul li a, 
+    .footer_contacts ul li, 
+    .footer_address p,
+    .products_button  {
+        font-size: 16px;
+    }
+    .main_txt,
+    .contacts_block_txt,
+    .contacts_block_phone p, 
+    .contacts_block_email p {
+        font-size: 23px;
+    }
+    .Items_page_cart_block {
+        padding-top: 0;
+    }
+
+}
+@media(max-width:1439px) {
+    .main_header, 
+    .contacts_block_header, 
+    .central_block_header {
+        font-size: 55px;
+    }
+    .main_txt, 
+    .contacts_block_txt, 
+    .contacts_block_phone p, 
+    .contacts_block_email p {
+        font-size: 22px;
+    }
+    .main_block_wrapper img {
+        width: 37%;
+    }
+    .central_block_item_header h3 {
+        font-size: 41px;
+    }
+    .central_block_item p,
+    .footer_menu ul li a, 
+    .footer_contacts ul li, 
+    .footer_address p, 
+    .products_button {
+        font-size: 15px;
+    }
+    .central_block_item p {
+        margin-top: 35px;
+    }
+    .products_button {
+        width: 220px;
+        height: 56px;
+        padding: 14px 25px;
+    }
+    .contacts_block_phone img, 
+    .contacts_block_email img
+     {
+        width: 25%;
+    }
+    .main_header {
+        margin-top: 75px;
+    }
+}
+@media(max-width:1300px) {
+    .main_header, 
+    .contacts_block_header, 
+    .central_block_header {
+        font-size: 50px;
+    }
+    .main_header {
+        margin-top: 68px;
+        max-width: 615px;
+    }
+    .header_logo img {
+        width: 95%;
+    }
+    .central_block_item_header h3 {
+        font-size: 39px;
+    }
+    .central_block_item p {
+        margin-top: 34px;
+    }
+    .central_block_item {
+        padding: 40px 40px;
+        margin: 0 25px;
+    }
+    .products_button {
+        width: 212px;
+        height: 56px;
+        padding: 14px 15px;
+    }
+    .central_block {
+        padding-bottom: 114px;
+    }
+    .contacts_block_phone img, 
+    .contacts_block_email img {
+        width: 23%;
+    }
+    .footer_menu ul li, 
+    .footer_contacts ul li,
+    .footer_address p {
+        margin-top: 8px;
+    }
+    .footer_menu ul,
+    .footer_contacts ul,
+    .footer_address {
+        font-size: 20px;
+    }
+}
+@media(max-width:1200px) {
+    .link {
+        margin-top: 4px;
+        font-size: 11px;
+       
+    }
+    .index {
+        background-size: 70px 70px;
+        width: 70px;
+        height: 70px;
+        padding-left: 49px;
+        padding-top: 46px;
+    }
+    .main_header, 
+    .contacts_block_header, 
+    .central_block_header {
+        font-size: 48px;
+    }
+    .main_header {
+        margin-top: 51px;
+        max-width: 575px;
+    }
+    .main_txt, 
+    .contacts_block_txt, 
+    .contacts_block_phone p, 
+    .contacts_block_email p {
+        font-size: 20px;
+    }
+    .central_block_item p, 
+    .footer_menu ul li a, 
+    .footer_contacts ul li, 
+    .footer_address p, 
+    .products_button {
+        font-size: 14px;
+    }
+    .central_block_item_header h3 {
+        font-size: 38px;
+    }
+    .contacts_block_phone img, 
+    .contacts_block_email img {
+        width: 21%;
+    }
+    .contacts_block_phone p, 
+    .contacts_block_email p {
+        margin-left: 25px;
+    }
+    .footer_logo img {
+        width: 95%;
+    }
+    
+}
+@media(max-width:1100px) {
+    .link {
+   
+       font-size: 14px;
+   }
+   .main_header, 
+   .contacts_block_header, 
+   .central_block_header {
+    font-size: 42px;
+    }
+    .main_header {
+      max-width: 500px;
+    }
+    .main_txt, 
+    .contacts_block_txt, 
+    .contacts_block_phone p, 
+    .contacts_block_email p {
+        font-size: 18px;
+    }
+    .central_block_item p, 
+    .footer_menu ul li a, 
+    .footer_contacts ul li, 
+    .footer_address p, 
+    .products_button {
+        font-size: 13px;
+    }
+    .products_button {
+        width: 200px;
+        height: 52px;
+        padding: 12px 12px;
+    }
+    .central_block_item_header h3 {
+        font-size: 36px;
+        margin-left: 16px;
+    }
+    .central_block_item {
+        padding: 30px 30px;
+        height: 392px;
+    }
+    .central_block {
+        padding-bottom: 100px;
+    }
+    .contacts_block_wrapper {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .contacts_block_txt {
+        margin-top: 65px;
+    }
+    .contacts_block_phone, 
+    .contacts_block_email {
+        margin-top: 50px;
+    }
+ }
+ @media(max-width:1000px) {
+    .header_page {
+        margin: 0 50px 18px 50px;
+    }
+    .main_block_wrapper {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .index {
+        background-size: 60px 60px;
+        width: 60px;
+        height: 60px;
+        padding-left: 42px;
+        padding-top: 39px;
+    }
+    .main_header, 
+    .contacts_block_header, 
+    .central_block_header {
+        font-size: 40px;
+    }
+    .main_header {
+        max-width: 480px;
+    }
+    .main_txt {
+     
+        margin-top: 58px;
+        margin-bottom: 58px;
+    }
+    .main_header {
+        margin-top: 39px;
+    }
+    .header_logo {
+        margin-top: 27px;
+    }
+    .central_block {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .central_block_item_header img {
+        width: 20%;
+    }
+    .central_block_item_header h3 {
+        font-size: 31px;
+        margin-left: 12px;
+    }
+    .central_block_item p, 
+    .footer_menu ul li a, 
+    .footer_contacts ul li, 
+    .footer_address p, 
+    .products_button {
+        font-size: 12px;
+    }
+    .central_block_item {
+       margin: 0 18px;
+    }
+
+ }
