@@ -208,6 +208,7 @@ section {
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
  }
  .contacts_block_phone, .contacts_block_email {
     display: flex;
@@ -353,6 +354,18 @@ section {
     font-weight: 600;
     line-height: 150%; /* 96px */
    
+}
+.footer_logo {
+    order: 1;
+}
+.footer_menu {
+    order:2;
+}
+.footer_contacts {
+    order: 3;
+}
+.footer_address {
+    order: 4;
 }
 @media(max-width:1800px) {
     .main_block_wrapper img {
@@ -576,6 +589,7 @@ section {
     }
     .contacts_block_txt {
         margin-top: 65px;
+        width: 80%;
     }
     .contacts_block_phone, 
     .contacts_block_email {
@@ -637,5 +651,74 @@ section {
     .central_block_item {
        margin: 0 18px;
     }
+    .contacts_block_phone {
+        margin-right: 100px;
+    }
+    .contacts_block_phone img, 
+    .contacts_block_email img {
+        width: 20%;
+    }
+    .creator {
+        font-size: 10px;
+        margin-right: 10px;
+   
+    }
+    .copyright {
+        font-size: 10px;
+    }
 
  }
+@media(max-width:900px) {
+    .header_logo img {
+        width: 80%;
+    }
+    .main_header, 
+    .contacts_block_header, 
+    .central_block_header {
+        font-size: 32px;
+    }
+    .main_header {
+       line-height: 140%;
+    }
+    .main_txt, 
+    .contacts_block_txt, 
+    .contacts_block_phone p, 
+    .contacts_block_email p {
+        font-size: 16px;
+    }
+    .products_button {
+        width: 185px;
+        height: 48px;
+        padding: 10px 12px;
+    }
+    .central_block_item_header img {
+        width: 18%;
+    }
+    .central_block_item_header h3 {
+        font-size: 26px;
+        margin-left: 10px;
+    }
+    .central_block_item {
+        margin: 0 10px;
+    }
+    .footer_logo img {
+        width: 25%;
+        
+    }
+    .footer_block_wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer_logo {
+        order: 4;
+    }
+    .footer_menu {
+        order: 1;
+    }
+    .footer_contacts {
+        order: 2;
+    }
+    .footer_address {
+        order: 3;
+    }
+}
