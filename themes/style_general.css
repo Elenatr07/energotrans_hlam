@@ -386,6 +386,7 @@ line-height: normal;
     display: none;
 }
 
+
 @media(max-width:1800px) {
     .main_block_wrapper img {
         width: 40%;

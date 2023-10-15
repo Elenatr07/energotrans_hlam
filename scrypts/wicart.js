@@ -206,9 +206,10 @@ function WICard(obj, plugins)
 													<td><a href="' + url + '">' + photo + name +'</a></td> \
 													<td id="lineprice_' + id + '"class="wigoodprice">' + price + ' руб.</td> \
 													<td> \
+													<div class="td_num">\
 													<div class="basket_num_buttons" id="minus_' + id + '">-</div> \
 													<span class="basket_num" id="basket_num_' + id + '">'+ num +'</span> \
-													<div class="basket_num_buttons" id="plus_' + id + '">+</div></td> \
+													<div class="basket_num_buttons" id="plus_' + id + '">+</div></div></td> \
 													<td id="linesum_' + id + '">'+ parseFloat(price * num) +' руб.</td> \
 													<td><a href="#" onclick="' + this.objNAME + '.delItem(\'' + id + '\')"><img class="img_close_yellow" src="'+ this.IMG + '" /></a></td> \
 													</tr>';	
