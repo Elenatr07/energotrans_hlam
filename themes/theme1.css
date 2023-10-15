@@ -14,6 +14,7 @@ font: normal 10px "inter";
 font: normal 16px Arial;
 border-radius: 5px;
 text-align: center;
+padding-top: 15px;
 
 }
 .cart_icon {
@@ -194,4 +195,21 @@ text-align: center;
     .Items_page_cart_block {
         margin-right: 50px;
     }
+    .cart {
+        width: 65px;
+        height: 65px;
+        margin-top: 15px;
+    }
+}
+@media(max-width:435px) {
+    .cart_icon {
+           background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    padding-left: 27px;
+    padding-top: 25px;
+    font: normal 8px "inter";
+    }
+ 
+
 }

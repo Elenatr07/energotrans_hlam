@@ -607,7 +607,11 @@ ul {
       margin-left: 10px;
   }
 }
-
+@media(max-wdth:900px) {
+   .hamb {
+     padding: 37px 25px;
+   }
+}
 @media(max-width:767px) {
    .header_page {
       margin: 0 50px;
