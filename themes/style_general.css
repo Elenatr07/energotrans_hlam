@@ -340,6 +340,7 @@ section {
     justify-content: space-around;
     max-width: 1920px;
     margin: 0 auto;
+    cursor: pointer;
 }
 .products_block_item img {
     width: 90%;
@@ -838,6 +839,9 @@ line-height: normal;
     }
     .products_block_items {
         flex-wrap: wrap;
+    }
+    .products_header {
+        margin-bottom: 65px;
     }
 
 }
