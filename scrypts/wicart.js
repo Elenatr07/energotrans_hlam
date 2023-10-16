@@ -29,7 +29,7 @@ function WICard(obj, plugins)
 	this.IDS = [];
 	this.objNAME = obj;
 	this.CONFIG = {};
-	this.IMG = "../img/close.svg";
+	this.IMG = "./img/close.svg";
 	
 	
 	this.init = function(widjetID, config)
