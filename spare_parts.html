@@ -75,6 +75,19 @@
 
             </div>
 			<div class="items_page_block_cart">
+<!--Cart29-->
+				
+						<div class="v all spare_parts">
+							<h2>Привод ПДП-4УМ для РПН РНТ-13 (РНО-13) (новый)</h2>
+							<div><img class="im" src="img/pdp-4.png" alt="Привод ПДП-4 УМ для РПН РНТ-13, РНТ-21" /></div>
+							<button type="button" class="btn_items_page" data-toggle="modal" data-target="#modal13">Еще фото </button>
+							<div>
+								<p>Цена: <span class="wicartprice" id="wicartprice_T0029">0</span> рублей</p>
+							</div>
+				
+							<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_T0028" value="1" data-min-value="1" data-max-value="3" /></div>
+							<button id="wicartbutton_T0029" class="button_addToCart" onclick="cart.addToCart(this, 'T0029', priceList['T0029'])">Купить</button>
+						</div>
 <!--Cart1-->
 				<div class="v all spare_parts ">
 					<h2>Термометр ТКП-160</h2>
@@ -438,6 +451,19 @@
 					<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_T0028" value="1" data-min-value="1" data-max-value="1" /></div>
 					<button id="wicartbutton_T0028" class="button_addToCart" onclick="cart.addToCart(this, 'T0028', priceList['T0028'])">Купить</button>
 				</div>
+			<!--Cart30-->
+				
+						<div class="v all spare_parts">
+							<h2>Лента крепированная для изоляции трансформатора</h2>
+							<div><img class="im" src="img/krep.png" alt="Лента крепированная изоляционная" /></div>
+							<button type="button" class="btn_items_page" data-toggle="modal" data-target="#" disabled>Еще фото </button>
+							<div>
+								<p>Цена: <span class="wicartprice" id="wicartprice_T0030">0</span> рублей</p>
+							</div>
+							<div class="items_page_quantity">Кол-во: <input type="text" class="wicartnum" id="winum_T0030" value="1" data-min-value="1" data-max-value="10" /></div>
+							<button id="wicartbutton_T0030" class="button_addToCart" onclick="cart.addToCart(this, 'T0030', priceList['T0030'])">Купить</button>
+						</div>
+		
 
 
 		</div>
@@ -923,7 +949,48 @@
 		</div>
 	</div>
 </div>
+<!-----Modal13------------------->
+<div class="modal" id="modal13">
+	<div class="modal-dialog modal-dialog-scrollable">
+		<div class="modal-content">
 
+			<!-- Modal header -->
+	
+
+			<!-- Modal body -->
+			<div class="modal-body">
+
+				<div class="items_page_img">
+					<div class="zoomer" onmousemove="zoom(event)"
+					style="background-image: url(img/pdp-4.png);" >
+					   <img src="img/pdp-4.png" alt="Привод ПДП-4УМ для РПН РНТ-13, РНО-13" />
+				   </div>
+				   <div class="zoomer" onmousemove="zoom(event)"
+				   style="background-image: url(img/shema_pdp.png);" >
+					  <img src="img/shema_pdp.png" alt="Схема Привода ПДП-4УМ для РПН РНТ-13, РНО-13" />
+				  </div>
+				  <div class="zoomer" onmousemove="zoom(event)"
+				  style="background-image: url(img/pdp1.png);" >
+					 <img src="img/pdp1.png" alt="Привод ПДП-4УМ для РПН РНТ-13, РНО-13" />
+				 </div>
+				 <div class="zoomer" onmousemove="zoom(event)"
+				 style="background-image: url(img/pdp2.png);" >
+					<img src="img/pdp2.png" alt="Привод ПДП-4УМ для РПН РНТ-13, РНО-13" />
+				</div>
+			
+				</div>
+		
+
+			</div>
+
+			<!-- Modal footer -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+			</div>
+
+		</div>
+	</div>
+</div>
 <script>
 var cart;
 var config;
